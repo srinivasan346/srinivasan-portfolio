@@ -1,14 +1,17 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Srinivasan | AI & Data Science Student</title>
-
-    <meta name="description" content="Srinivasan's personal portfolio - AI and Data Science engineering student.">
+    <title>Srinivasan | AI & Data Science</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,89 +19,97 @@
     <!-- Navigation -->
     <header>
         <nav class="navbar">
-            <h2 class="logo">Srinivasan<span>.</span></h2>
+            <div class="logo">S<span>.</span></div>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
         </nav>
     </header>
 
-
-    <!-- Home Section -->
+    <!-- Hero -->
     <section id="home" class="hero">
 
         <div class="hero-content">
 
-            <p class="intro">Hello, I'm</p>
+            <p class="intro">HELLO, I'M</p>
 
-            <h1>Srinivasan</h1>
+            <h1>Srinivasan<span>.</span></h1>
 
             <h2>AI & Data Science Student</h2>
 
-            <p>
-                Engineering student passionate about Artificial Intelligence,
-                Data Science, technology and building innovative projects.
+            <p class="hero-text">
+                I build intelligent ideas, experiment with AI,
+                and turn problems into practical digital solutions.
             </p>
 
             <div class="hero-buttons">
-                <a href="#projects" class="btn">View My Projects</a>
+                <a href="#projects" class="btn primary">View My Work</a>
                 <a href="#contact" class="btn secondary">Contact Me</a>
             </div>
 
         </div>
 
+        <div class="hero-card">
+            <div class="profile-circle">
+                <span>AI</span>
+            </div>
+
+            <p>Building the future with</p>
+            <strong>Artificial Intelligence</strong>
+        </div>
+
     </section>
 
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="section">
 
-        <h2>About Me</h2>
+        <p class="section-label">ABOUT ME</p>
 
-        <p>
-            I'm Srinivasan, an engineering student studying Artificial Intelligence
-            and Data Science at Dhaanish Chennai.
-        </p>
+        <h2 class="section-title">
+            Curious mind. <span>Creative builder.</span>
+        </h2>
 
-        <p>
-            I'm currently developing my skills in programming, AI, Data Science
-            and web development while working on practical projects and learning
-            new technologies.
-        </p>
+        <div class="about-container">
 
-    </section>
+            <div class="about-text">
+                <p>
+                    I'm an engineering student specializing in AI and
+                    Data Science. I enjoy exploring artificial intelligence,
+                    programming, web development, and emerging technologies.
+                </p>
 
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-
-        <h2>My Skills</h2>
-
-        <div class="skills-container">
-
-            <div class="skill-card">
-                <h3>Python</h3>
-                <p>Learning programming, automation and data analysis.</p>
+                <p>
+                    My goal is to continuously learn, build meaningful
+                    projects, and turn innovative ideas into real-world
+                    solutions.
+                </p>
             </div>
 
-            <div class="skill-card">
-                <h3>Artificial Intelligence</h3>
-                <p>Exploring AI concepts and practical applications.</p>
-            </div>
+            <div class="about-stats">
 
-            <div class="skill-card">
-                <h3>Data Science</h3>
-                <p>Learning data analysis, visualization and machine learning.</p>
-            </div>
+                <div class="stat">
+                    <h3>01+</h3>
+                    <p>Year Learning</p>
+                </div>
 
-            <div class="skill-card">
-                <h3>Web Development</h3>
-                <p>Building websites using HTML, CSS and JavaScript.</p>
+                <div class="stat">
+                    <h3>05+</h3>
+                    <p>Projects</p>
+                </div>
+
+                <div class="stat">
+                    <h3>∞</h3>
+                    <p>Ideas</p>
+                </div>
+
             </div>
 
         </div>
@@ -106,97 +117,168 @@
     </section>
 
 
-    <!-- Projects Section -->
+    <!-- Skills -->
+    <section id="skills" class="section">
+
+        <p class="section-label">MY SKILLS</p>
+
+        <h2 class="section-title">
+            Tools I <span>work with.</span>
+        </h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <div class="skill-icon">🐍</div>
+                <h3>Python</h3>
+                <p>Programming & automation</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🤖</div>
+                <h3>Artificial Intelligence</h3>
+                <p>AI concepts & applications</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">📊</div>
+                <h3>Data Science</h3>
+                <p>Data analysis & visualization</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🌐</div>
+                <h3>Web Development</h3>
+                <p>HTML, CSS & JavaScript</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">⚡</div>
+                <h3>Problem Solving</h3>
+                <p>Creative technical thinking</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🔧</div>
+                <h3>Git & GitHub</h3>
+                <p>Version control & projects</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
     <section id="projects" class="section">
 
-        <h2>My Projects</h2>
+        <p class="section-label">MY WORK</p>
 
-        <div class="projects-container">
+        <h2 class="section-title">
+            Projects I've <span>built.</span>
+        </h2>
 
-            <!-- Project 1 -->
-            <div class="project-card">
+        <div class="projects-grid">
 
-                <h3>Target Shooter</h3>
+            <article class="project-card">
 
-                <p>
-                    An interactive browser game created as a practical project
-                    to explore web development and game logic.
-                </p>
+                <div class="project-number">01</div>
+
+                <div>
+                    <h3>Target Shooter</h3>
+
+                    <p>
+                        An interactive shooting game created using
+                        AI-assisted development tools.
+                    </p>
+
+                    <div class="tags">
+                        <span>Game</span>
+                        <span>AI</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
 
                 <a href="#" class="project-link">View Project →</a>
 
-            </div>
+            </article>
 
 
-            <!-- Project 2 -->
-            <div class="project-card">
+            <article class="project-card">
 
-                <h3>AI Project</h3>
+                <div class="project-number">02</div>
 
-                <p>
-                    An upcoming Artificial Intelligence project focused on
-                    solving a real-world problem using technology.
-                </p>
+                <div>
+                    <h3>AI Project</h3>
 
-                <a href="#" class="project-link">Coming Soon →</a>
+                    <p>
+                        An AI-based project focused on solving
+                        a practical real-world problem.
+                    </p>
 
-            </div>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>AI</span>
+                        <span>Data</span>
+                    </div>
+                </div>
+
+                <a href="#" class="project-link">View Project →</a>
+
+            </article>
 
 
-            <!-- Project 3 -->
-            <div class="project-card">
+            <article class="project-card">
 
-                <h3>Data Science Project</h3>
+                <div class="project-number">03</div>
 
-                <p>
-                    An upcoming project involving data analysis, visualization
-                    and machine learning.
-                </p>
+                <div>
+                    <h3>Coming Soon</h3>
 
-                <a href="#" class="project-link">Coming Soon →</a>
+                    <p>
+                        Something new is currently being designed
+                        and developed.
+                    </p>
 
-            </div>
+                    <div class="tags">
+                        <span>Innovation</span>
+                        <span>Development</span>
+                    </div>
+                </div>
+
+                <a href="#contact" class="project-link">Stay Tuned →</a>
+
+            </article>
 
         </div>
 
     </section>
 
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
+    <!-- Contact -->
+    <section id="contact" class="contact section">
 
-        <h2>Let's Connect</h2>
+        <p class="section-label">GET IN TOUCH</p>
+
+        <h2 class="contact-title">
+            Let's build something <span>amazing.</span>
+        </h2>
 
         <p>
-            Interested in collaborating, discussing projects or technology?
+            I'm always interested in learning, collaborating,
+            and working on interesting ideas.
         </p>
 
-        <div class="contact-links">
-
-            <a href="mailto:your-email@example.com">
-                Email
-            </a>
-
-            <a href="https://github.com/" target="_blank">
-                GitHub
-            </a>
-
-            <a href="https://www.linkedin.com/" target="_blank">
-                LinkedIn
-            </a>
-
-        </div>
+        <a href="mailto:yourmail@gmail.com" class="btn primary">
+            Say Hello →
+        </a>
 
     </section>
 
 
     <!-- Footer -->
     <footer>
-
-        <p>
-            © 2026 Srinivasan. All rights reserved.
-        </p>
-
+        <p>© 2026 Srinivasan. Built with curiosity & code.</p>
     </footer>
 
 
@@ -204,3 +286,4 @@
 
 </body>
 </html>
+```
