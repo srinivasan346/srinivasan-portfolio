@@ -458,3 +458,85 @@ footer {
 }
 
 /* INNER GLOW BUTTON */ .glow-btn { position: relative; overflow: hidden; isolation: isolate; background: #0d0d0d; border: 1px solid #7c5cff; color: white; box-shadow: inset 0 0 15px rgba(124, 92, 255, 0.25), 0 0 20px rgba(124, 92, 255, 0.15); transition: 0.4s ease; } .glow-btn span { position: relative; z-index: 3; } .glow-btn .glow { position: absolute; width: 80px; height: 80px; background: #7c5cff; border-radius: 50%; filter: blur(30px); opacity: 0.5; top: 50%; left: -80px; transform: translateY(-50%); transition: 0.6s ease; z-index: 1; } /* Hover animation */ .glow-btn:hover .glow { left: calc(100% - 20px); } .glow-btn:hover { transform: translateY(-4px); box-shadow: inset 0 0 25px rgba(124, 92, 255, 0.5), 0 0 35px rgba(124, 92, 255, 0.35); } /* Moving border */ .glow-btn::before { content: ""; position: absolute; inset: -2px; background: linear-gradient( 90deg, transparent, #7c5cff, transparent ); transform: translateX(-100%); transition: 0.7s; z-index: 0; } .glow-btn:hover::before { transform: translateX(100%); }
+```css
+/* ============================= */
+/* FULL SCREEN PROJECT SLIDE */
+/* ============================= */
+
+#home {
+    transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+#home.slide-out {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+
+/* Project screen */
+
+#projects {
+    min-height: 100vh;
+
+    display: none;
+
+    padding-top: 130px;
+
+    transform: translateX(100%);
+    opacity: 0;
+
+    transition:
+        transform 0.8s cubic-bezier(0.77, 0, 0.175, 1),
+        opacity 0.8s ease;
+}
+
+
+/* Project enters from right */
+
+#projects.show-projects {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/* Make project section feel like a new screen */
+
+#projects.project-screen {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* Project cards animation */
+
+#projects.show-projects .project-card {
+    animation: projectAppear 0.7s ease forwards;
+}
+
+#projects.show-projects .project-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+#projects.show-projects .project-card:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+#projects.show-projects .project-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+
+@keyframes projectAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+```
