@@ -1,115 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Srinivasan - AI & Data Science Engineering Student Portfolio">
 
     <title>Srinivasan | AI & Data Science</title>
 
-    <link rel="stylesheet" href="style.css">
-
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
-    <!-- Navigation -->
+    <!-- ========================= -->
+    <!-- NAVIGATION -->
+    <!-- ========================= -->
+
     <header>
         <nav class="navbar">
-            <div class="logo">S<span>.</span></div>
 
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+            <div class="logo">
+                S<span>.</span>
             </div>
 
-            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <div class="nav-links">
+
+                <a href="#home">Home</a>
+
+                <a href="#about">About</a>
+
+                <a href="#skills">Skills</a>
+
+                <a href="#projects">Projects</a>
+
+                <a href="#contact">Contact</a>
+
+            </div>
+
+            <button class="menu-btn" onclick="toggleMenu()">
+                ☰
+            </button>
+
         </nav>
     </header>
 
-    <!-- Hero -->
+
+
+    <!-- ========================= -->
+    <!-- HOME / HERO -->
+    <!-- ========================= -->
+
     <section id="home" class="hero">
 
         <div class="hero-content">
 
-            <p class="intro">HELLO, I'M</p>
-
-            <h1>Srinivasan<span>.</span></h1>
-
-            <h2>AI & Data Science Student</h2>
-
-            <p class="hero-text">
-                I build intelligent ideas, experiment with AI,
-                and turn problems into practical digital solutions.
+            <p class="intro">
+                HELLO, I'M
             </p>
 
+            <h1>
+                Srinivasan<span>.</span>
+            </h1>
+
+            <h2>
+                AI & Data Science Student
+            </h2>
+
+            <p class="hero-text">
+                I build intelligent ideas, explore artificial intelligence,
+                and turn real-world problems into practical digital solutions.
+            </p>
+
+
             <div class="hero-buttons">
-<button class="btn primary glow-btn" onclick="showProjects()">
-    <span>View My Work</span>
-    <div class="glow"></div>
-</button>
-                <a href="#contact" class="btn secondary">Contact Me</a>
+
+                <!-- VIEW PROJECTS BUTTON -->
+
+                <button
+                    class="btn primary glow-btn"
+                    onclick="showProjects()">
+
+                    <span>
+                        View My Work
+                    </span>
+
+                    <div class="glow"></div>
+
+                </button>
+
+
+                <!-- CONTACT BUTTON -->
+
+                <a
+                    href="#contact"
+                    class="btn secondary">
+
+                    Contact Me
+
+                </a>
+
             </div>
 
         </div>
 
+
+
+        <!-- HERO CARD -->
+
         <div class="hero-card">
+
             <div class="profile-circle">
                 <span>AI</span>
             </div>
 
-            <p>Building the future with</p>
-            <strong>Artificial Intelligence</strong>
+            <p>
+                Building the future with
+            </p>
+
+            <strong>
+                Artificial Intelligence
+            </strong>
+
         </div>
 
     </section>
 
 
-    <!-- About -->
+
+    <!-- ========================= -->
+    <!-- ABOUT -->
+    <!-- ========================= -->
+
     <section id="about" class="section">
 
-        <p class="section-label">ABOUT ME</p>
+        <p class="section-label">
+            ABOUT ME
+        </p>
 
         <h2 class="section-title">
-            Curious mind. <span>Creative builder.</span>
+            Curious mind.
+            <span>Creative builder.</span>
         </h2>
+
 
         <div class="about-container">
 
+
             <div class="about-text">
+
                 <p>
-                    I'm an engineering student specializing in AI and
-                    Data Science. I enjoy exploring artificial intelligence,
-                    programming, web development, and emerging technologies.
+                    I'm an engineering student specializing in
+                    AI and Data Science.
+                </p>
+
+                <p>
+                    I enjoy exploring artificial intelligence,
+                    programming, web development, and emerging
+                    technologies.
                 </p>
 
                 <p>
                     My goal is to continuously learn, build meaningful
-                    projects, and turn innovative ideas into real-world
-                    solutions.
+                    projects, and transform innovative ideas into
+                    real-world solutions.
                 </p>
+
             </div>
+
+
 
             <div class="about-stats">
 
                 <div class="stat">
-                    <h3>01+</h3>
-                    <p>Year Learning</p>
+
+                    <h3>
+                        01+
+                    </h3>
+
+                    <p>
+                        Year Learning
+                    </p>
+
                 </div>
 
-                <div class="stat">
-                    <h3>05+</h3>
-                    <p>Projects</p>
-                </div>
 
                 <div class="stat">
-                    <h3>∞</h3>
-                    <p>Ideas</p>
+
+                    <h3>
+                        05+
+                    </h3>
+
+                    <p>
+                        Projects
+                    </p>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <h3>
+                        ∞
+                    </h3>
+
+                    <p>
+                        Ideas
+                    </p>
+
                 </div>
 
             </div>
@@ -119,51 +230,131 @@
     </section>
 
 
-    <!-- Skills -->
+
+    <!-- ========================= -->
+    <!-- SKILLS -->
+    <!-- ========================= -->
+
     <section id="skills" class="section">
 
-        <p class="section-label">MY SKILLS</p>
+        <p class="section-label">
+            MY SKILLS
+        </p>
 
         <h2 class="section-title">
-            Tools I <span>work with.</span>
+            Tools I
+            <span>work with.</span>
         </h2>
+
+
 
         <div class="skills-grid">
 
-            <div class="skill-card">
-                <div class="skill-icon">🐍</div>
-                <h3>Python</h3>
-                <p>Programming & automation</p>
-            </div>
 
             <div class="skill-card">
-                <div class="skill-icon">🤖</div>
-                <h3>Artificial Intelligence</h3>
-                <p>AI concepts & applications</p>
+
+                <div class="skill-icon">
+                    🐍
+                </div>
+
+                <h3>
+                    Python
+                </h3>
+
+                <p>
+                    Programming & automation
+                </p>
+
             </div>
 
-            <div class="skill-card">
-                <div class="skill-icon">📊</div>
-                <h3>Data Science</h3>
-                <p>Data analysis & visualization</p>
-            </div>
+
 
             <div class="skill-card">
-                <div class="skill-icon">🌐</div>
-                <h3>Web Development</h3>
-                <p>HTML, CSS & JavaScript</p>
+
+                <div class="skill-icon">
+                    🤖
+                </div>
+
+                <h3>
+                    Artificial Intelligence
+                </h3>
+
+                <p>
+                    AI concepts & applications
+                </p>
+
             </div>
 
-            <div class="skill-card">
-                <div class="skill-icon">⚡</div>
-                <h3>Problem Solving</h3>
-                <p>Creative technical thinking</p>
-            </div>
+
 
             <div class="skill-card">
-                <div class="skill-icon">🔧</div>
-                <h3>Git & GitHub</h3>
-                <p>Version control & projects</p>
+
+                <div class="skill-icon">
+                    📊
+                </div>
+
+                <h3>
+                    Data Science
+                </h3>
+
+                <p>
+                    Data analysis & visualization
+                </p>
+
+            </div>
+
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    🌐
+                </div>
+
+                <h3>
+                    Web Development
+                </h3>
+
+                <p>
+                    HTML, CSS & JavaScript
+                </p>
+
+            </div>
+
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    ⚡
+                </div>
+
+                <h3>
+                    Problem Solving
+                </h3>
+
+                <p>
+                    Creative technical thinking
+                </p>
+
+            </div>
+
+
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    🔧
+                </div>
+
+                <h3>
+                    Git & GitHub
+                </h3>
+
+                <p>
+                    Version control & projects
+                </p>
+
             </div>
 
         </div>
@@ -171,84 +362,179 @@
     </section>
 
 
-    <!-- Projects -->
+
+    <!-- ========================= -->
+    <!-- PROJECTS -->
+    <!-- ========================= -->
+
     <section id="projects" class="section">
 
-        <p class="section-label">MY WORK</p>
+
+        <p class="section-label">
+            MY WORK
+        </p>
+
 
         <h2 class="section-title">
-            Projects I've <span>built.</span>
+            Projects I've
+            <span>built.</span>
         </h2>
+
+
 
         <div class="projects-grid">
 
+
+            <!-- PROJECT 01 -->
+
             <article class="project-card">
 
-                <div class="project-number">01</div>
-
-                <div>
-                    <h3>Target Shooter</h3>
-
-                    <p>
-                        An interactive shooting game created using
-                        AI-assisted development tools.
-                    </p>
-
-                    <div class="tags">
-                        <span>Game</span>
-                        <span>AI</span>
-                        <span>JavaScript</span>
-                    </div>
+                <div class="project-number">
+                    01
                 </div>
 
-                <a href="#" class="project-link">View Project →</a>
+
+                <div>
+
+                    <h3>
+                        Target Shooter
+                    </h3>
+
+
+                    <p>
+                        An interactive shooting game created
+                        using AI-assisted development tools.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>
+                            Game
+                        </span>
+
+                        <span>
+                            AI
+                        </span>
+
+                        <span>
+                            JavaScript
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="#"
+                    class="project-link">
+
+                    View Project →
+
+                </a>
 
             </article>
 
 
+
+            <!-- PROJECT 02 -->
+
             <article class="project-card">
 
-                <div class="project-number">02</div>
+                <div class="project-number">
+                    02
+                </div>
+
 
                 <div>
-                    <h3>AI Project</h3>
+
+                    <h3>
+                        AI Project
+                    </h3>
+
 
                     <p>
                         An AI-based project focused on solving
                         a practical real-world problem.
                     </p>
 
+
                     <div class="tags">
-                        <span>Python</span>
-                        <span>AI</span>
-                        <span>Data</span>
+
+                        <span>
+                            Python
+                        </span>
+
+                        <span>
+                            AI
+                        </span>
+
+                        <span>
+                            Data
+                        </span>
+
                     </div>
+
                 </div>
 
-                <a href="#" class="project-link">View Project →</a>
+
+                <a
+                    href="#"
+                    class="project-link">
+
+                    View Project →
+
+                </a>
 
             </article>
 
 
+
+            <!-- PROJECT 03 -->
+
             <article class="project-card">
 
-                <div class="project-number">03</div>
-
-                <div>
-                    <h3>Coming Soon</h3>
-
-                    <p>
-                        Something new is currently being designed
-                        and developed.
-                    </p>
-
-                    <div class="tags">
-                        <span>Innovation</span>
-                        <span>Development</span>
-                    </div>
+                <div class="project-number">
+                    03
                 </div>
 
-                <a href="#contact" class="project-link">Stay Tuned →</a>
+
+                <div>
+
+                    <h3>
+                        Coming Soon
+                    </h3>
+
+
+                    <p>
+                        Something new is currently being
+                        designed and developed.
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>
+                            Innovation
+                        </span>
+
+                        <span>
+                            Development
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="#contact"
+                    class="project-link">
+
+                    Stay Tuned →
+
+                </a>
 
             </article>
 
@@ -257,35 +543,63 @@
     </section>
 
 
-    <!-- Contact -->
+
+    <!-- ========================= -->
+    <!-- CONTACT -->
+    <!-- ========================= -->
+
     <section id="contact" class="contact section">
 
-        <p class="section-label">GET IN TOUCH</p>
+
+        <p class="section-label">
+            GET IN TOUCH
+        </p>
+
 
         <h2 class="contact-title">
-            Let's build something <span>amazing.</span>
+            Let's build something
+            <span>amazing.</span>
         </h2>
 
+
         <p>
-            I'm always interested in learning, collaborating,
+            I'm interested in learning, collaborating,
             and working on interesting ideas.
         </p>
 
-        <a href="mailto:yourmail@gmail.com" class="btn primary">
+
+        <a
+            href="mailto:yourmail@gmail.com"
+            class="btn primary">
+
             Say Hello →
+
         </a>
 
     </section>
 
 
-    <!-- Footer -->
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
     <footer>
-        <p>© 2026 Srinivasan. Built with curiosity & code.</p>
+
+        <p>
+            © 2026 Srinivasan.
+            Built with curiosity & code.
+        </p>
+
     </footer>
 
+
+
+    <!-- JAVASCRIPT -->
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
 
