@@ -42,8 +42,7 @@ cards.forEach(card => {
 
     observer.observe(card);
 });
-```
-```javascript
+javascript
 function showProjects() {
     const home = document.getElementById("home");
     const projects = document.getElementById("projects");
