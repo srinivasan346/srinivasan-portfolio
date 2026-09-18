@@ -43,3 +43,28 @@ cards.forEach(card => {
     observer.observe(card);
 });
 ```
+```javascript
+function showProjects() {
+    const home = document.getElementById("home");
+    const projects = document.getElementById("projects");
+
+    // Move home screen out
+    home.classList.add("slide-out");
+
+    setTimeout(() => {
+        // Hide home
+        home.style.display = "none";
+
+        // Show projects
+        projects.classList.add("project-screen");
+        projects.style.display = "block";
+
+        // Start project animation
+        setTimeout(() => {
+            projects.classList.add("show-projects");
+        }, 50);
+
+    }, 700);
+}
+```
+
